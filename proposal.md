@@ -1,5 +1,4 @@
 # Problemsetting AML 2025 Group XX
-
 ## Overview
 
 The goal of this project is to forecast electricity prices using a **state space model (SSM)** on multivariate time series data consisting of historical prices, electricity consumption, and weather features. Accurate forecasting is critical for market participants to optimize energy production and consumption, reduce costs, and improve grid reliability.
