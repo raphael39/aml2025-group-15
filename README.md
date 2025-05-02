@@ -1,1 +1,1 @@
-# aml2025-group-15
+# Electricity Price Forecasting using Weather and Consumption Data
