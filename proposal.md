@@ -1,13 +1,5 @@
 # Problemsetting AML 2025 Group XX
 
-This document presents the project proposal for the Advanced Machine Learning course at the University of Zurich in the Spring 2025 semester. It has been prepared by Team XX, consisting of:
-
-- [Your Name], [email or contact]  
-- [Teammate Name], [email or contact]  
-- [Teammate Name], [email or contact]
-
----
-
 ## Overview
 
 The goal of this project is to forecast electricity prices using a **state space model (SSM)** on multivariate time series data consisting of historical prices, electricity consumption, and weather features. Accurate forecasting is critical for market participants to optimize energy production and consumption, reduce costs, and improve grid reliability.
