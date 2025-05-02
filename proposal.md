@@ -23,9 +23,9 @@ our objective is to predict electricity prices for a defined **forecast horizon 
 
 Let the dataset be defined as:
 
-\[
+$'\[
 D = \{(X_t, y_t)\}_{t=1}^{N}
-\]
+\]'$
 
 Where:
 
