@@ -1,7 +1,7 @@
 # Problemsetting AML 2025 Group 15
 ## Overview
 
-The aim of this project is to forecast electricity prices in the Netherlands. We chose the Netherlands because it has a liberalised electricity market and is a single bidding zone. In addition, it is a relatively small geographical area and therefore has fewer weather differences. To predict prices, we will use a **State Space Model (SSM)** on multivariate time series data consisting of historical prices, electricity consumption and weather characteristics. Accurate forecasting is critical for market participants to optimise energy production and consumption, reduce costs and improve grid reliability and sustainability.
+The aim of this project is to forecast hourly electricity prices in the Netherlands. We chose the Netherlands because it has a liberalised electricity market and is a single bidding zone. In addition, it is a relatively small geographical area and therefore has fewer weather differences. To predict prices, we will use a **State Space Model (SSM)** on multivariate time series data consisting of historical prices, electricity consumption and weather characteristics. Accurate forecasting is critical for market participants to optimise energy production and consumption, reduce costs and improve grid reliability and sustainability.
 
 We will begin our pipeline with a lightweight Deep State‐Space Model (DSSM)—its small neural transition and emission networks let us validate end-to-end data ingestion, incorporate exogenous features (weather, load, time) and produce probabilistic forecasts. Once our DSSM baseline is established, we will swap in a Structured State Space (S4) layer—leveraging its FFT‐accelerated, long‐dependency dynamics—to quantify and capture additional gains in accuracy and uncertainty calibration over extended horizons.
 
@@ -9,13 +9,15 @@ We will begin our pipeline with a lightweight Deep State‐Space Model (DSSM)—
 
 ## Problem Formulation
 
-Given a multivariate time series:
-
+We consider a multivariate time series of hourly observations, including:
 - Electricity prices  
 - Electricity consumption  
-- Weather data  
+- Weather variables  
+- Generation mix  
 
-our objective is to predict electricity prices for a defined **forecast horizon H**.
+Our objective is to forecast electricity prices over a specified horizon \(H\), producing hourly predictions.
+
+
 
 ### Formal Setup
 
@@ -103,7 +105,6 @@ We will use publicly available data sources:
 
 ### Electricity Prices
 - [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/)
-- [Swissgrid](https://www.swissgrid.ch/)
 
 ### Electricity Consumption
 - [UCI Smart Meter Dataset](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
