@@ -1,11 +1,9 @@
-# Problemsetting AML 2025 Group XX
+# Problemsetting AML 2025 Group 15
 ## Overview
 
 The aim of this project is to forecast electricity prices in the Netherlands. We chose the Netherlands because it has a liberalised electricity market and is a single bidding zone. In addition, it is a relatively small geographical area and therefore has fewer weather differences. To predict prices, we will use a **State Space Model (SSM)** on multivariate time series data consisting of historical prices, electricity consumption and weather characteristics. Accurate forecasting is critical for market participants to optimise energy production and consumption, reduce costs and improve grid reliability and sustainability.
 
-Recent advances in machine learning have shown that state space models can effectively model temporal dependencies in sequential data while accounting for uncertainty and latent dynamics. Our aim is to develop a probabilistic or neural SSM that captures the underlying structure of electricity price movements driven by both internal dynamics (e.g., autoregressive behavior) and external variables (e.g., temperature, consumption).
-
-We will evaluate our model on real-world electricity and weather datasets and compare it to strong baselines including a persistence model and linear regression.
+We will begin our pipeline with a lightweight Deep State‐Space Model (DSSM)—its small neural transition and emission networks let us validate end-to-end data ingestion, incorporate exogenous features (weather, load, time) and produce probabilistic forecasts. Once our DSSM baseline is established, we will swap in a Structured State Space (S4) layer—leveraging its FFT‐accelerated, long‐dependency dynamics—to quantify and capture additional gains in accuracy and uncertainty calibration over extended horizons.
 
 ---
 
