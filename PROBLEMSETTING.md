@@ -107,7 +107,8 @@ To align the datasets, we will use the shortest time interval (1 hour) of the 3 
 
 ## Evaluation Metrics
 
-We split the 7-day horizon into 28 consecutive 6 h blocks (Block 1 = 0–6 h … Block 28 = 162–168 h). Then for each block we are evaluating the following metrics:
+We split the 7-day horizon into 28 consecutive 6 h blocks (Block 1 = 0–6 h … Block 28 = 162–168 h), matching the update cadence of meteorological forecasts. Then, for each block, we evaluate:
+
 
 - **Mean Squared Error (MSE)**
 - **Mean Absolute Error (MAE)**
