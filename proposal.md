@@ -36,10 +36,10 @@ Where:
     - lagged price values
 - $\( y_t \in \mathbb{R} \)$ is the target electricity price at time $\( t \)$
 
-The goal is to train a model $\( f_\theta \)$, specifically a state space model, that predicts:
+The goal is to train a model $\( f )$, specifically a state space model, that predicts:
 
 $\[
-\hat{y_t} = f_\theta(X_{1:t})
+\hat{y_t} = f(X_{1:t})
 \]$
 
 minimizing the error between $\( y_t \)$ and $\( \hat{y}_t \)$.
