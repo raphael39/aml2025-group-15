@@ -1,4 +1,4 @@
-# Problemsetting AML 2025 Group 15
+# Problem Setting AML 2025 Group 15
 ## Overview
 
 The aim of this project is to forecast hourly electricity prices in the Netherlands. We chose the Netherlands because it has a liberalised electricity market and is a single bidding zone. In addition, it is a relatively small geographical area and therefore has fewer weather differences. To predict prices, we will use a **State Space Model (SSM)** on multivariate time series data consisting of historical prices, electricity consumption and weather characteristics. Accurate forecasting is critical for market participants to optimise energy production and consumption, reduce costs and improve grid reliability and sustainability.
