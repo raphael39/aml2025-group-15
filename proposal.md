@@ -23,26 +23,26 @@ Our objective is to forecast electricity prices over a specified horizon \(H\), 
 
 Let the dataset be defined as:
 
-$'\[
+$\[
 D = \{(X_t, y_t)\}_{t=1}^{N}
-\]'$
+\]$
 
 Where:
 
-- \( X_t \in \mathbb{R}^n \) is the input feature vector at time \( t \), including:
+- $\( X_t \in \mathbb{R}^n \)$ is the input feature vector at time $\( t \)$, including:
   - lagged price values
   - consumption metrics
   - weather variables
   - time-based features
-- \( y_t \in \mathbb{R} \) is the target electricity price at time \( t \)
+- $\( y_t \in \mathbb{R} \)$ is the target electricity price at time $\( t \)$
 
-The goal is to train a model \( f_\theta \), specifically a state space model, that predicts:
+The goal is to train a model $\( f_\theta \)$, specifically a state space model, that predicts:
 
-\[
-\hat{y}_t = f_\theta(X_{1:t})
-\]
+$\[
+\hat{y_t} = f_\theta(X_{1:t})
+\]$
 
-minimizing the error between \( y_t \) and \( \hat{y}_t \).
+minimizing the error between $\( y_t \)$ and $\( \hat{y}_t \)$.
 
 ---
 
