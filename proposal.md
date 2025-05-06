@@ -133,9 +133,9 @@ We split the 7-day horizon into 28 consecutive 6 h blocks (Block 1 = 0–6 h …
 
 To get a better overview of the reliability, we further aggregate these blocks into three horizon tiers:
 
-### Short-term (0–24 h, Blocks 1–4)
-### Medium-term (24–72 h, Blocks 5–12)
-### Long-term (72–168 h, Blocks 13–28)
+- **Short-term (0–24 h, Blocks 1–4)
+- **Medium-term (24–72 h, Blocks 5–12)
+- **Long-term (72–168 h, Blocks 13–28)
 
 
 
