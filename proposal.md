@@ -123,14 +123,6 @@ Weather data includes:
 
 ---
 
-## Optional Extensions (if time permits)
-
-- Incorporate uncertainty estimation (e.g., prediction intervals)
-- Evaluate model performance in different countries or seasonal periods
-- Visualize latent dynamics learned by the state space model
-
----
-
 ## Evaluation Metrics
 
 - Mean Squared Error (MSE)  
