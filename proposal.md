@@ -125,10 +125,16 @@ Weather data includes:
 
 ## Evaluation Metrics
 
-- Mean Squared Error (MSE)  
-- Mean Absolute Error (MAE)  
-- Mean Absolute Percentage Error (MAPE)  
-- Calibration of probabilistic forecasts (if applicable)
+We split the 7-day horizon into **28 consecutive 6 h blocks** (Block 1 = 0–6 h, …, Block 28 = 162–168 h). Then for each block we are evaluating the following metrics:
+
+  * **Mean Squared Error (MSE)**
+
+  * **Mean Absolute Error (MAE)**
+
+  * **Mean Absolute Percentage Error (MAPE)**
+
+
+
 
 ---
 
