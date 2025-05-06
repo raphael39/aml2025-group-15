@@ -21,7 +21,7 @@ Our objective is to forecast electricity prices over a specified horizon \(H\), 
 
 ### Formal Setup
 
-Let the dataset be defined as:
+Let the dataset be a multivariate time series, defined as:
 
 $\[
 D = \{(X_t, y_t)\}_{t=1}^{N}
@@ -30,10 +30,10 @@ D = \{(X_t, y_t)\}_{t=1}^{N}
 Where:
 
 - $\( X_t \in \mathbb{R}^n \)$ is the input feature vector at time $\( t \)$, including:
-  - lagged price values
-  - consumption metrics
-  - weather variables
-  - time-based features
+    - weather indicators (e.g., temperature, humidity, wind speed)
+    - electricity load/consumption
+    - calendar-based features (hour of day, day of week, holidays)
+    - lagged price values
 - $\( y_t \in \mathbb{R} \)$ is the target electricity price at time $\( t \)$
 
 The goal is to train a model $\( f_\theta \)$, specifically a state space model, that predicts:
