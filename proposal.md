@@ -46,21 +46,6 @@ minimizing the error between $\( y_t \)$ and $\( \hat{y}_t \)$.
 
 ---
 
-## Model Description
-
-We will implement a **State Space Model (SSM)** for time series forecasting. Our approach may include:
-
-- Classical linear Gaussian SSM (e.g., Kalman Filter)
-- Neural SSMs such as:
-  - Deep State Space Models (DSSM)
-  - Structured State Space Models (S4)
-  - DeepAR with probabilistic forecasting
-- Latent variable modeling to capture hidden market dynamics
-
-The model will be trained to minimize forecasting error using regression-based loss (e.g., MSE) or probabilistic loss (e.g., negative log-likelihood).
-
----
-
 ## Model Inputs
 
 Our model will use the following features:
