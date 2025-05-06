@@ -91,9 +91,6 @@ Our model will use the following features:
 
 We will benchmark our model against:
 
-- **Persistence Model**  
-  - Predicts the next value as the last observed price  
-
 - **Linear Regression**  
   - Trained on lagged values, weather, and time-based inputs  
 
@@ -101,25 +98,25 @@ We will benchmark our model against:
 
 ## Datasets
 
-We will use publicly available data sources:
+We will use the following publicly available data sources for the Netherlands:
 
 ### Electricity Prices
 - [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/)
 
 ### Electricity Consumption
-- [UCI Smart Meter Dataset](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
 - [ENTSO-E Load Data](https://transparency.entsoe.eu/)
 
 ### Weather Data
 - [Open-Meteo API](https://open-meteo.com/)
-- [Visual Crossing Weather API](https://www.visualcrossing.com/weather-data)
 
 Weather data includes:
 - Temperature  
 - Humidity  
 - Wind speed  
 - Radiation  
-- Precipitation  
+- Precipitation
+
+To align the datasets, we will use the shortest time interval (1 hour) of the 3 datasets. 
 
 ---
 
