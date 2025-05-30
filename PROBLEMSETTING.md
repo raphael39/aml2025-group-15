@@ -78,7 +78,7 @@ Our model will use the following features:
 
 We will benchmark our model against:
 
-- **Structured State Space for Sequence Modelling (S4)
+- **Structured State Space for Sequence Modelling (S4)**
 
 - **Mamba**
 
