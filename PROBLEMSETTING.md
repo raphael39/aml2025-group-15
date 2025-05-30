@@ -109,6 +109,15 @@ Weather data includes:
 
 To align the datasets, we will use the shortest time interval (1 hour) of the 3 datasets. 
 
+### Data Splitting Strategy
+To ensure realistic forecasting and avoid data leakage, we apply a strictly chronological split. We go back three years and divide the data as follows:
+
+Training set: first 18 months
+Validation set: next 18 months
+Test set: strictly future window beyond the 3-year history
+
+At each prediction time t, the model is only provided with features and labels up to t. The test set simulates a real-world deployment scenario by evaluating the trained model on completely unseen future data, ensuring no look-ahead bias.
+
 ---
 
 ## Evaluation Metrics
