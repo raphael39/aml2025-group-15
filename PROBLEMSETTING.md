@@ -44,6 +44,8 @@ $\[
 
 minimizing the error between $\( y_t \)$ and $\( \hat{y}_t \)$.
 
+To validate our model on real-world historical data, we simulate forecasting a previous day by using only the data available up to that point. For example, to forecast prices on day $d$, we use input features from the past up to time $t=d−1$, and evaluate the model’s predictions $y_{t+1:t+24}$ against the true prices on day $d$.
+
 ---
 
 ## Model Inputs
@@ -75,6 +77,10 @@ Our model will use the following features:
 ## Baselines
 
 We will benchmark our model against:
+
+- **Structured State Space for Sequence Modelling (S4)
+
+- **Mamba**
 
 - **Linear Regression**  
   - Trained on lagged values, weather, and time-based inputs  
@@ -108,7 +114,6 @@ To align the datasets, we will use the shortest time interval (1 hour) of the 3 
 ## Evaluation Metrics
 
 We split the 7-day horizon into 28 consecutive 6 h blocks (Block 1 = 0–6 h … Block 28 = 162–168 h), matching the update cadence of meteorological forecasts. Then, for each block, we evaluate:
-
 
 - **Mean Squared Error (MSE)**
 - **Mean Absolute Error (MAE)**
