@@ -76,8 +76,6 @@ Our model will use the following features:
 
 ## Baselines
 
-We will benchmark our model against:
-
 - **Structured State Space for Sequence Modelling (S4)**
     - https://github.com/state-spaces/s4
     - We will initialize the S4 layer using the HiPPO matrix, to preserve input memory and accurately represent long sequences of data.
