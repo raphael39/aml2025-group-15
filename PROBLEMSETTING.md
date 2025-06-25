@@ -85,7 +85,7 @@ Our model will use the following features:
 
 - **Mamba**
     - https://github.com/state-spaces/mamba
-    - We will use pretrained Mamba models provided in the Github, adapting them to our electricity price forecasting task to evaluate performance and uncertainty calibration.
+    - We will use pretrained Mamba models provided in the GitHub, adapting them to our electricity price forecasting task to evaluate performance and uncertainty calibration.
 
 - **Linear Regression**  
   - Trained on lagged values, weather, and time-based inputs  
@@ -138,11 +138,3 @@ To get a better overview of the reliability, we further aggregate these blocks i
 - **Short-term (0–24 h, Blocks 1–4)**
 - **Medium-term (24–72 h, Blocks 5–12)**
 - **Long-term (72–168 h, Blocks 13–28)**
-
-
-
-
-
----
-
-
